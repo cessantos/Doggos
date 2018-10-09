@@ -67,13 +67,3 @@ fastlane/readme.md
 .idea/compiler.xml
 .idea/misc.xml
 .idea/runConfigurations.xml
-app/.gitignore
-app/libs/
-app/proguard-rules.pro
-app/src/
-build.gradle
-gradle.properties
-gradle/
-gradlew
-gradlew.bat
-settings.gradle
