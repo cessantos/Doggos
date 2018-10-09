@@ -68,7 +68,6 @@ fastlane/readme.md
 .idea/misc.xml
 .idea/runConfigurations.xml
 app/.gitignore
-app/build.gradle
 app/libs/
 app/proguard-rules.pro
 app/src/
