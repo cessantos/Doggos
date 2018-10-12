@@ -66,7 +66,7 @@ public class GalleryView extends Fragment implements GalleryContract.View {
     @Override
     public void populateGallery(List<String> doggos) {
         mDoggoGridList.setLayoutManager(new GridLayoutManager(getActivity(), 3));
-        GridDoggosRecyclerViewAdapter adapter = new GridDoggosRecyclerViewAdapter(getContext(), doggos, getActivity());
+        GridDoggosRecyclerViewAdapter adapter = new GridDoggosRecyclerViewAdapter(getContext(), doggos);
         mDoggoGridList.setAdapter(adapter);
 
         hideLoader();
