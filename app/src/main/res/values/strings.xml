@@ -16,4 +16,8 @@
     </string>
     <string name="sign_in">Sign in</string>
     <string name="user_name">User Name</string>
+    <string name="husky">Husky</string>
+    <string name="hound">Hound</string>
+    <string name="pug">Pug</string>
+    <string name="labrador">Labrador</string>
 </resources>

@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.LoginActivity">
+    tools:context=".ui.activities.GalleryActivity">
 
     <FrameLayout
-        android:id="@+id/fl_login_fragment_holder"
+        android:id="@+id/fl_gallery_fragment_holder"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
