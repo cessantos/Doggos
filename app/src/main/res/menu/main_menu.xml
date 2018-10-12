@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mi_filter_husky"
+        android:title="@string/husky"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/mi_filter_hound"
+        android:title="@string/hound"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/mi_filter_pug"
+        android:title="@string/pug"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/mi_filter_labrador"
+        android:title="@string/labrador"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText" />
+</menu>

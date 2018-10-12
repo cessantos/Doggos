@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <ProgressBar
+        android:id="@+id/pb_doggos_gallery"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:layout_below="@+id/toolbar">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_doggos_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp" />
+    </FrameLayout>
+
+
+</RelativeLayout>
