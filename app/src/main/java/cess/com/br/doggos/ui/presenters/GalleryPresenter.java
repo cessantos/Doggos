@@ -38,7 +38,6 @@ public class GalleryPresenter implements GalleryContract.Presenter {
 
                     @Override
                     public void onCompleted() {
-
                     }
 
                     @Override
