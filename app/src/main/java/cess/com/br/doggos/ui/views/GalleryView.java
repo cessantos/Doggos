@@ -101,6 +101,14 @@ public class GalleryView extends Fragment implements GalleryContract.View {
             case R.id.mi_filter_labrador:
                 mPresenter.getDoggosByCategory("labrador", spm.getStringValue("token", ""));
                 return true;
+            case R.id.mi_sign_off:
+
+                SharedPreferencesManager spm = new SharedPreferencesManager(getContext());
+                spm.removeStringValue("token");
+
+                getActivity().finish();
+
+                return true;
 
             default:
                 return super.onOptionsItemSelected(item);
