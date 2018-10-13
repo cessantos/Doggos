@@ -5,6 +5,8 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import javax.inject.Inject;
+
 import cess.com.br.doggos.R;
 import cess.com.br.doggos.ui.presenters.LoginPresenter;
 import cess.com.br.doggos.ui.views.LoginView;
@@ -27,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
             loginView.setRetainInstance(true);
         }
 
-        LoginPresenter mPresenter = new LoginPresenter(loginView);
+        LoginPresenter mPresenter = new LoginPresenter(loginView, null, null);
 
         loginView.setPresenter(mPresenter);
 

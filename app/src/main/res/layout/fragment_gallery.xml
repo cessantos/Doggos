@@ -17,8 +17,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="8dp"
-        android:layout_below="@+id/toolbar">
+        android:layout_margin="8dp">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rv_doggos_list"

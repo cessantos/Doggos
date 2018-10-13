@@ -66,7 +66,7 @@ public class GalleryView extends Fragment implements GalleryContract.View {
     @Override
     public void populateGallery(List<String> doggos) {
         mDoggoGridList.setLayoutManager(new GridLayoutManager(getActivity(), 3));
-        GridDoggosRecyclerViewAdapter adapter = new GridDoggosRecyclerViewAdapter(getContext(), doggos, getActivity());
+        GridDoggosRecyclerViewAdapter adapter = new GridDoggosRecyclerViewAdapter(getContext(), doggos);
         mDoggoGridList.setAdapter(adapter);
 
         hideLoader();
@@ -100,6 +100,14 @@ public class GalleryView extends Fragment implements GalleryContract.View {
                 return true;
             case R.id.mi_filter_labrador:
                 mPresenter.getDoggosByCategory("labrador", spm.getStringValue("token", ""));
+                return true;
+            case R.id.mi_sign_off:
+
+                SharedPreferencesManager spm = new SharedPreferencesManager(getContext());
+                spm.removeStringValue("token");
+
+                getActivity().finish();
+
                 return true;
 
             default:

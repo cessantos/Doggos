@@ -9,6 +9,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.inject.Inject;
+
 import cess.com.br.doggos.api.RetrofitConfig;
 import cess.com.br.doggos.api.RetrofitServices;
 import cess.com.br.doggos.models.cache.SharedPreferencesManager;
@@ -20,6 +22,7 @@ import rx.Completable;
 import rx.CompletableSubscriber;
 import rx.Observable;
 import rx.Observer;
+import rx.Scheduler;
 import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action;
@@ -32,7 +35,8 @@ public class LoginPresenter implements LoginContract.Presenter {
 
     private final LoginContract.View mView;
 
-    public LoginPresenter(LoginView loginView) {
+    @Inject
+    public LoginPresenter(LoginView loginView, Scheduler processScheduler, Scheduler androidScheduler) {
         mView = loginView;
     }
 
